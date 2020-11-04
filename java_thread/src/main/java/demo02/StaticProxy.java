@@ -12,7 +12,7 @@ public class StaticProxy {
     public static void main(String[] args) {
 
         // 好处：代理对象可以做目标对象做不了的事情
-        // 真实对象可以专注做自己的事情
+        // 目标对象可以专注做自己的事情
         WeddingCompany weddingCompany = new WeddingCompany(new You());
         weddingCompany.marry();
 
