@@ -30,8 +30,9 @@ class Ticket implements Runnable {
 
     private boolean flag = true;
 
+    // 同步方法，锁的对象是 this对象 Ticket
     @Override
-    public void run() {
+    public synchronized void run() {
 
         try {
             while (flag) {
@@ -43,7 +44,7 @@ class Ticket implements Runnable {
     }
 
     // 买票
-    void buyTicket() throws InterruptedException {
+    void  buyTicket() throws InterruptedException {
 
         if (ticketNum <= 0) {
             flag = false;

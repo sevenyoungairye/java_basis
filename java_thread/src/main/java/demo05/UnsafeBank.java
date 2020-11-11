@@ -56,24 +56,28 @@ class DrawMoney extends Thread {
     @Override
     public void run() {
 
-        if (account.money - drawingMoney <= 0) {
-            System.out.println("余额不足，请充值。。。" + this.getName());
-            return;
+        // 锁住增删改对象，锁共享对象
+        // 同步块
+        synchronized (account) {
+            if (account.money - drawingMoney <= 0) {
+                System.out.println("余额不足，请充值。。。" + this.getName());
+                return;
+            }
+
+
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+
+            account.money = account.money - drawingMoney;
+
+            nowMoney += drawingMoney;
+
+            System.out.println("卡里面还有：" + account.money);
+            System.out.println(this.getName() + "手里面有：" + nowMoney);
         }
-
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        account.money = account.money - drawingMoney;
-
-        nowMoney += drawingMoney;
-
-        System.out.println("卡里面还有：" + account.money);
-        System.out.println(this.getName() + "手里面有：" + nowMoney);
 
     }
 }

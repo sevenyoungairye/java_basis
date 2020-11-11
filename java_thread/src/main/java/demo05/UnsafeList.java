@@ -17,7 +17,12 @@ public class UnsafeList {
 
         for (int i = 0; i < 10000; i++) {
             // 10000个线程操作list集合
-            new Thread(() -> list.add(Thread.currentThread().getName())).start();
+            new Thread(() -> {
+                // 利用同步代码块 将 集合锁起来，一个一个的来，同步安全。
+                synchronized (list) {
+                    list.add(Thread.currentThread().getName());
+                }
+            }).start();
         }
 
         try {
