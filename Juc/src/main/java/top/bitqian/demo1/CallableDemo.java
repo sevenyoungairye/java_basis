@@ -3,6 +3,7 @@ package top.bitqian.demo1;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.FutureTask;
+import java.util.concurrent.TimeUnit;
 
 /**
  * 线程的实现方式 实现callable接口
@@ -13,6 +14,15 @@ import java.util.concurrent.FutureTask;
 class MyThreadByCallable implements Callable<String> {
     @Override
     public String call() {
+
+        System.out.println("come in call *********");
+
+        try {
+            TimeUnit.SECONDS.sleep(2L);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
         return "hell callable!";
     }
 }
@@ -32,6 +42,9 @@ public class CallableDemo {
 
         // 开启线程
         new Thread(futureTask, "rye").start();
+
+        // 开启两个线程 futureTask 只会调用一次方法。
+        new Thread(futureTask, "rye1").start();
 
         String res = futureTask.get();
 
