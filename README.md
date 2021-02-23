@@ -8,3 +8,6 @@ Java基础学习，记录。
 
 2021/2/15 
 juc (java util concurrent) Java并发编程。
+
+2021/2/23
+JVM Java虚拟机基本原理。
