@@ -41,11 +41,14 @@ public class Liskov1 {
         System.out.println("3-2=" + b.fun1(3, 2));
 
         // 执行了父类方法, 但是hello并未被重写... 可能导致程序的混乱..
+        Map<?, ?> map = new HashMap<>();
         Case3.A a1 = new Case3.A();
-        a1.hello(new HashMap<>());
+        a1.hello(map);
         // 执行了子类方法
         Case3.B b1 = new Case3.B();
         b1.hello(new HashMap<>());
+        // {}父类的方法
+        b1.hello(map);
     }
 
     static class A {
