@@ -32,7 +32,7 @@ public class EnumSingleton {
         this.init();
     }
 
-    enum MySingleton {
+    public enum MySingleton {
         // 能防止反序列化重新创建新的对象
         ENUM_SINGLETON;
 
