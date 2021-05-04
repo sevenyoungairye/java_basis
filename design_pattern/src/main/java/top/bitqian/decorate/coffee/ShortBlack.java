@@ -11,8 +11,8 @@ package top.bitqian.decorate.coffee;
 public class ShortBlack extends Coffee {
 
     public ShortBlack() {
-        setDesc("美式黑coffee");
-        setPrice(3.00f);
+        super.setDesc("美式黑coffee");
+        super.setPrice(3.00f);
     }
 
 }
