@@ -4,6 +4,7 @@ package top.bitqian.composite;
  * @author echo lovely
  * @date 2021/5/4 16:24
  * @description a client
+ * jdk源码见HashMap
  */
 
 public class SchoolManager {
