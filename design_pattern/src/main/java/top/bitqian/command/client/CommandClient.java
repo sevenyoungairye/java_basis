@@ -9,6 +9,7 @@ import top.bitqian.command.receiver.LightReceiver;
  * @author echo lovely
  * @date 2021/5/11 19:36
  * @description client
+ * jdbcTemplate..
  */
 
 public class CommandClient {
