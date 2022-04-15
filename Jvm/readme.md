@@ -20,7 +20,7 @@
    - 双亲委派机制，先找启动类加载器  -> 扩展类加载器 -> 应用程序类加载器。先找到的先用此模板。
 
      - ```java
-       package top.bitqian;
+       package top.lel;
        
        /**
         * @author echo lovely
