@@ -1,4 +1,4 @@
-package top.bitqian.demo3;
+package top.lel.juc.demo3;
 
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;

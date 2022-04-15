@@ -1,4 +1,4 @@
-package top.bitqian.function;
+package top.lel.juc.function;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

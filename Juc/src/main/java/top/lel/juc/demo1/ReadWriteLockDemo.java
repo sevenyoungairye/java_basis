@@ -1,4 +1,4 @@
-package top.bitqian.demo1;
+package top.lel.juc.demo1;
 
 import java.util.HashMap;
 import java.util.Map;

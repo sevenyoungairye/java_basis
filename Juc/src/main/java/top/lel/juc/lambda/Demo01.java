@@ -1,4 +1,4 @@
-package top.bitqian.lambda;
+package top.lel.juc.lambda;
 
 /**
  * @author echo lovely

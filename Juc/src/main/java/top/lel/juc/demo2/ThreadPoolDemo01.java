@@ -1,4 +1,4 @@
-package top.bitqian.demo2;
+package top.lel.juc.demo2;
 
 import java.util.concurrent.*;
 
