@@ -43,7 +43,7 @@ public class MySingleton {
         @Override
         public String toString() {
 
-            return INSTANCE.toString();
+            return super.toString();
         }
     }
 
