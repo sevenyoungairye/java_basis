@@ -1,4 +1,4 @@
-package top.bitqian.easy.link_recursion;
+package top.lel.lc.easy.link_recursion;
 
 import java.util.ArrayList;
 import java.util.List;

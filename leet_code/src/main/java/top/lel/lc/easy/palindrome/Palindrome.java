@@ -1,4 +1,4 @@
-package top.bitqian.easy.palindrome;
+package top.lel.lc.easy.palindrome;
 
 import java.util.Stack;
 

@@ -1,4 +1,4 @@
-package top.bitqian.easy.two_sum;
+package top.lel.lc.easy.two_sum;
 
 import java.util.Arrays;
 import java.util.LinkedHashMap;

@@ -1,4 +1,4 @@
-package top.bitqian.easy.reverse_integer;
+package top.lel.lc.easy.reverse_integer;
 
 import java.util.Stack;
 

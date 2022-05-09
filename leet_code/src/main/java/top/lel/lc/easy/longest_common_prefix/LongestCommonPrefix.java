@@ -1,4 +1,4 @@
-package top.bitqian.easy.longest_common_prefix;
+package top.lel.lc.easy.longest_common_prefix;
 
 
 /**
