@@ -1,0 +1,4 @@
+# 文件名称为接口文件
+
+# 实现类的全路径
+top.lel.jvm.sdk.spi.FileSearch
